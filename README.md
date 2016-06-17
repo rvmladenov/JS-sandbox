@@ -1,1 +1,1 @@
-# JS-sandbox
+# A playground place for JS staff
