@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VueJS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="js/vendor/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" v-on:input="changeTitle" />
+        <p> {{title}} </p>
+        <button v-on:click="clickFuncReset">Reset</button>
+    </div>
+
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                title: "Hello bitch :)"
+            },
+            methods: {
+                changeTitle: function (event) {
+                    this.title = event.target.value;
+                },
+                clickFuncReset: function (event) {
+                    this.title = "Hello bitch :)"
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
