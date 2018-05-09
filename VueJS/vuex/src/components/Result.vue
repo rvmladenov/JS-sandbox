@@ -1,5 +1,7 @@
 <template>
+<div>
     <p>Counter is: {{ counter }}</p>
+</div>
 </template>
 
 <script>

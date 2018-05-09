@@ -1,10 +1,16 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
+import counter from "./modules/counter";
+import value from "./modules/value";
+
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-    state: {
-        counter: 0
+    modules: {
+        counter: {
+            namespaced: true
+        },
+        value
     }
 });
